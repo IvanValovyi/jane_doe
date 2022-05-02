@@ -1,0 +1,51 @@
+h1, h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+  font-size: 700;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.date p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #009688;
+}
+
+.main_info p {
+  color: #757575;
+}
+.main_info p .current {
+  background: #009688;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+@media (max-width: 500px) {
+  h1, h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .date p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=text.css.map */

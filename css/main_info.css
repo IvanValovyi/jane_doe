@@ -1,0 +1,112 @@
+.main_info .image {
+  position: relative;
+  width: calc(100% + 40px);
+  left: -20px;
+  margin-bottom: 15px;
+}
+.main_info .image img {
+  width: 100%;
+}
+.main_info .image h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.main_info .title {
+  margin: 15px 0;
+}
+.main_info .skills, .main_info .leanguages {
+  width: 100%;
+}
+.main_info ul {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.main_info ul.main_list {
+  border-bottom: 1px solid #e2e0e0;
+}
+.main_info ul li {
+  margin-bottom: 20px;
+}
+.main_info ul li:last-child {
+  margin-bottom: 0;
+}
+.main_info ul li svg {
+  margin-right: 15px;
+}
+.main_info ul.skill_list li .level {
+  position: relative;
+  margin-top: 20px;
+  height: 18px;
+  padding: 2px 0;
+  width: 100%;
+  border-radius: 20px;
+  background: #f1f1f1;
+}
+.main_info ul.skill_list li .level::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  font-size: 12px;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  background: #009688;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.main_info ul.skill_list li:nth-child(1) .level::before {
+  content: "90%";
+  width: 90%;
+}
+.main_info ul.skill_list li:nth-child(2) .level::before {
+  content: "80%";
+  width: 80%;
+}
+.main_info ul.skill_list li:nth-child(3) .level::before {
+  content: "75%";
+  width: 75%;
+}
+.main_info ul.skill_list li:nth-child(4) .level::before {
+  content: "50%";
+  width: 50%;
+}
+.main_info ul.leanguages_list li .level {
+  position: relative;
+  margin-top: 20px;
+  height: 25px;
+  padding: 2px 0;
+  width: 100%;
+  border-radius: 20px;
+  background: #f1f1f1;
+}
+@media (max-width: 500px) {
+  .main_info ul.leanguages_list li .level {
+    margin-top: 15px;
+    height: 20px;
+  }
+}
+.main_info ul.leanguages_list li .level::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  font-size: 12px;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  background: #009688;
+}
+.main_info ul.leanguages_list li:nth-child(1) .level::before {
+  width: 100%;
+}
+.main_info ul.leanguages_list li:nth-child(2) .level::before {
+  width: 50%;
+}
+.main_info ul.leanguages_list li:nth-child(3) .level::before {
+  width: 25%;
+}
+
+/*# sourceMappingURL=main_info.css.map */

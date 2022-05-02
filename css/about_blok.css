@@ -1,0 +1,23 @@
+.about_blok div.title {
+  padding-bottom: 30px;
+}
+.about_blok ul {
+  margin: 0 10px;
+}
+.about_blok ul li {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e0e0;
+}
+.about_blok ul li h3, .about_blok ul li .date {
+  margin-bottom: 20px;
+}
+.about_blok ul li .date svg {
+  margin-right: 15px;
+}
+.about_blok ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=about_blok.css.map */

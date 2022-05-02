@@ -1,0 +1,23 @@
+@import './mixin'
+
+footer
+    @include flex(flex-start, center, column)
+    background: rgb(0, 150, 136)
+    padding: 10px 0
+    width: 1600px
+    @media ( max-width: 1600px )
+        width: 100%
+    .media_list
+        @include flex(center, center)
+        svg
+            width: 20px 
+            height: 20px
+            margin: 10px
+            fill: white
+            cursor: pointer
+            &:hover 
+                fill: #c5c4c4
+    p
+        font-size: 20px
+        color: white
+        margin-bottom: 10px

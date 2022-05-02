@@ -1,0 +1,89 @@
+@import './mixin'
+
+.main_info
+    .image
+        position: relative
+        width: calc( 100% +  40px )
+        left: -20px
+        margin-bottom: 15px
+        img
+            width: 100%
+        h1
+            position: absolute
+            bottom: 10px
+            left: 10px
+    .title
+        margin: 15px 0
+    .skills, .leanguages
+        width: 100%
+    ul
+        width: 100%
+        padding-bottom: 15px
+        &.main_list
+            border-bottom: 1px solid #e2e0e0
+        li
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0
+            svg
+                margin-right: 15px
+        &.skill_list
+            li .level
+                position: relative
+                margin-top: 20px
+                height: 18px
+                padding: 2px 0
+                width: 100%
+                border-radius: 20px
+                background: rgb(241, 241, 241)
+                &::before
+                    content: ''
+                    position: absolute
+                    height: 100%
+                    font-size: 12px
+                    border-radius: 20px
+                    top: 0
+                    left: 0
+                    background: rgb(0, 150, 136)
+                    color: white
+                    @include flex(center, center)
+                    
+            li:nth-child(1) .level::before
+                content: '90%'
+                width: 90%
+            li:nth-child(2) .level::before
+                content: '80%'
+                width: 80%
+            li:nth-child(3) .level::before
+                content: '75%'
+                width: 75%
+            li:nth-child(4) .level::before
+                content: '50%'
+                width: 50%
+        &.leanguages_list
+            li .level
+                position: relative
+                margin-top: 20px
+                height: 25px
+                @media ( max-width: 500px )
+                    margin-top: 15px
+                    height: 20px
+                padding: 2px 0
+                width: 100%
+                border-radius: 20px
+                background: rgb(241, 241, 241)
+                &::before
+                    content: ''
+                    position: absolute
+                    height: 100%
+                    font-size: 12px
+                    border-radius: 20px
+                    top: 0
+                    left: 0
+                    background: rgb(0, 150, 136)
+            li:nth-child(1) .level::before
+                width: 100%
+            li:nth-child(2) .level::before
+                width: 50%
+            li:nth-child(3) .level::before
+                width: 25%

@@ -1,0 +1,113 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  font-family: "Robotto", sans-serif;
+}
+
+body {
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  width: 1600px;
+}
+@media (max-width: 1600px) {
+  .app {
+    width: 100%;
+  }
+}
+.app .main_info {
+  flex: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 20px;
+  padding: 0 20px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px 0px, rgba(0, 0, 0, 0.19) 0px 4px 20px 0px;
+}
+.app .about_blok {
+  flex: 7;
+  margin: 20px;
+  margin-left: 0;
+}
+.app .about_blok .education, .app .about_blok .experience {
+  padding: 20px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px 0px, rgba(0, 0, 0, 0.19) 0px 4px 20px 0px;
+}
+.app .about_blok .experience {
+  margin-bottom: 20px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul svg {
+  width: 20px;
+  height: 20px;
+}
+
+.main_info .title svg {
+  width: 25px;
+  height: 25px;
+}
+
+.about_blok .title svg {
+  width: 40px;
+  height: 40px;
+}
+
+.title svg {
+  margin-right: 15px;
+}
+
+svg {
+  fill: #009688;
+}
+
+.date, .title, .main_list li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .app, .app .about_blok {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .app .about_blok {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .app .about_blok {
+    margin: 0;
+    margin-left: 0;
+  }
+  .app .about_blok .experience, .app .about_blok .education {
+    margin: 15px;
+    padding: 15px;
+    width: calc(100vw - 60px);
+  }
+  .app .main_info {
+    margin: 0 15px;
+    width: calc(100vw - 70px);
+  }
+}
+
+/*# sourceMappingURL=other.css.map */

@@ -1,0 +1,37 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: #009688;
+  padding: 10px 0;
+  width: 1600px;
+}
+@media (max-width: 1600px) {
+  footer {
+    width: 100%;
+  }
+}
+footer .media_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+footer .media_list svg {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  fill: white;
+  cursor: pointer;
+}
+footer .media_list svg:hover {
+  fill: #c5c4c4;
+}
+footer p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=footer.css.map */
