@@ -5,11 +5,16 @@ footer {
   flex-direction: column;
   background: #009688;
   padding: 10px 0;
-  width: 1600px;
+  width: 1560px;
 }
 @media (max-width: 1600px) {
   footer {
-    width: 100%;
+    width: calc(100% - 40px);
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    width: calc(100% - 30px);
   }
 }
 footer .media_list {

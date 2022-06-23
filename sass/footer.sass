@@ -4,9 +4,11 @@ footer
     @include flex(flex-start, center, column)
     background: rgb(0, 150, 136)
     padding: 10px 0
-    width: 1600px
+    width: 1560px
     @media ( max-width: 1600px )
-        width: 100%
+        width: calc( 100% - 40px )
+    @media ( max-width: 800px )
+        width: calc( 100% - 30px )
     .media_list
         @include flex(center, center)
         svg
